@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://dqtp86wiq3plm"]
+[gd_scene load_steps=29 format=4 uid="uid://dqtp86wiq3plm"]
 
 [ext_resource type="Texture2D" uid="uid://bmon32rkbnhjr" path="res://Projeto2DGodot/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="1_vneta"]
 [ext_resource type="Texture2D" uid="uid://bdxy4w1fy4802" path="res://Projeto2DGodot/Tiny Swords (Update 010)/Terrain/Water/Foam/Foam.png" id="2_oxh6l"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://qngr25ty576q" path="res://Projeto2DGodot/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="7_vr7bm"]
 [ext_resource type="Texture2D" uid="uid://dmd24148bpxa2" path="res://Projeto2DGodot/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png" id="8_akhds"]
 [ext_resource type="Texture2D" uid="uid://ciy1o4rksns63" path="res://Projeto2DGodot/Tiny Swords (Update 010)/Terrain/Ground/Shadows.png" id="8_h1uwb"]
+[ext_resource type="PackedScene" uid="uid://74p4u4eqqhx" path="res://Projeto2DGodot/Characters/base_character.tscn" id="10_lywfp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qu681"]
 resource_name = "water"
@@ -226,3 +227,6 @@ tile_set = SubResource("TileSet_ds4fu")
 [node name="Grama" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAQAAQAAAAAAAAAAAASAAQAAAACAAAAAAARAAQAAAABAAAAAAAWAAUAAAACAAAAAAAWAAgAAAACAAIAAAAQAAYAAAAAAAIAAAATAAcAAAAAAAIAAAAUAAgAAAAAAAIAAAAVAAgAAAABAAIAAAASAAYAAAABAAIAAAARAAUAAAABAAEAAAASAAUAAAABAAEAAAATAAUAAAABAAAAAAAUAAUAAAABAAAAAAAVAAUAAAABAAAAAAAWAAYAAAACAAEAAAAWAAcAAAACAAEAAAAUAAcAAAABAAEAAAAVAAcAAAABAAEAAAAVAAYAAAABAAEAAAAUAAYAAAABAAEAAAATAAYAAAABAAEAAAAQAAUAAAAAAAEAAAARAAYAAAABAAIAAAA=")
 tile_set = SubResource("TileSet_151gb")
+
+[node name="BaseCharacter" parent="." instance=ExtResource("10_lywfp")]
+position = Vector2(1715, 1295)

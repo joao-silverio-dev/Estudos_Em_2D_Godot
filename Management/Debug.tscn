@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7d3jwkugd8c6"]
+
+[ext_resource type="PackedScene" uid="uid://dqtp86wiq3plm" path="res://Projeto2DGodot/Scenes/node_2d.tscn" id="1_oialm"]
+[ext_resource type="PackedScene" uid="uid://74p4u4eqqhx" path="res://Projeto2DGodot/Characters/base_character.tscn" id="2_i61vo"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Terreno" parent="." instance=ExtResource("1_oialm")]
+
+[node name="BaseCharacter2" parent="." instance=ExtResource("2_i61vo")]
+position = Vector2(1122, 349)
+_motion_speed = 270.0
